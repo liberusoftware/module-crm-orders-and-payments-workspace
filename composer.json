@@ -1,5 +1,1 @@
-{"name":"liberusoftware/module-crm-orders-and-payments-workspace","type":"liberu-module","autoload":{"psr-4":{"Liberu\\CRM\\OrdersAndPaymentsWorkspace\\":"src/"}},"extra":{"laravel":{"providers":["Liberu\\CRM\\OrdersAndPaymentsWorkspace\\OrdersAndPaymentsWorkspaceServiceProvider"]},"liberu":{"name":"crm-orders-and-payments-workspace"}},
-    "require": {
-        "liberusoftware/module-organizations-teams": "^1.0"
-    }
-}
+{"name":"liberusoftware/module-crm-orders-and-payments-workspace","type":"liberu-module","autoload":{"psr-4":{"Liberu\\CRM\\OrdersAndPaymentsWorkspace\\":"src/"}},"extra":{"laravel":{"providers":["Liberu\\CRM\\OrdersAndPaymentsWorkspace\\OrdersAndPaymentsWorkspaceServiceProvider"]},"liberu":{"name":"crm-orders-and-payments-workspace"}},"description":"Payment links, deposits, orders, subscriptions, statuses, refunds, disputes and handoff records","license":"MIT"}

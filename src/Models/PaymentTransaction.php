@@ -4,18 +4,14 @@ declare(strict_types=1);
 
 namespace Liberu\CRM\OrdersAndPaymentsWorkspace\Models;
 
-use Illuminate\Database\Eloquent\Relations\BelongsTo;
-use Liberu\Foundation\Organizations\Models\Team;
+use App\Traits\IsTenantModel;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\HasMany;
 
 /** @property int $team_id @property string $kind @property string $status @property float $amount @property float $paid_amount @property float $refunded_amount */
 final class PaymentTransaction extends Model
 {
-    public function team(): BelongsTo
-    {
-        return $this->belongsTo(Team::class);
-    }
+    use IsTenantModel;
 
     protected $table = 'crm_orders_payments';
 
